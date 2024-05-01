@@ -5,7 +5,6 @@ module.exports = {
     async getThoughts(req, res) {
         try{
             const thoughts = await Thought.find();
-            console.log(" In the getthoughts")
 
             res.json(thoughts);
         } catch (err) {
@@ -73,6 +72,7 @@ module.exports = {
             if (!thought) {
                return res.status(404).json({ message: 'No thought with that ID' });
             }
+            return res.status(200).json({ message: 'deleted thought' })
         } catch (err) {
             
             res.status(500).json(err);
@@ -92,7 +92,7 @@ module.exports = {
                 return res.status(404).json({ message: 'No thought with that ID!' });
             }
 
-            res.json(reaction);
+            return res.json(reaction);
         } catch (err) {
             res.status(500).json(err)
         }
@@ -109,7 +109,7 @@ module.exports = {
 
             if(!reaction) {
                 return res.status(404).json({ messae: 'No reaction or thought with this ID'});
-            }
+            };
 
             res.json(reaction);
         } catch (err) {
