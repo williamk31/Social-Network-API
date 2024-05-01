@@ -5,6 +5,8 @@ module.exports = {
     async getThoughts(req, res) {
         try{
             const thoughts = await Thought.find();
+            console.log(" In the getthoughts")
+
             res.json(thoughts);
         } catch (err) {
             res.status(500).json(err);
@@ -72,6 +74,7 @@ module.exports = {
                return res.status(404).json({ message: 'No thought with that ID' });
             }
         } catch (err) {
+            
             res.status(500).json(err);
         }
     },
