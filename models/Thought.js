@@ -1,12 +1,7 @@
 const { Schema, model } = require('mongoose');
 const reactionSchema = require('./Reaction');
-// const formattedDate = require('../utils/helper')
-// console.log(formattedDate)
+const formattedDate = require('../utils/helper')
 
-function formattedDate(today) {
-    console.log("this is today = ". today)
-    return "aAAAAAAAAAAA"
-}
 const thoughtSchema = new Schema(
     {
         thoughtText: {
@@ -29,6 +24,7 @@ const thoughtSchema = new Schema(
     {
         toJSON: {
             virtuals: true,
+            getters: true,
         },
         id: false,
     }

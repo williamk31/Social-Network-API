@@ -22,6 +22,12 @@ const reactionSchema = new Schema(
             default: Date.now,
             get: (today) => formattedDate(today)
         }
+    },
+    {
+        toJSON: {
+            virutals: true,
+            getters: true,
+        }
     }
 );
 

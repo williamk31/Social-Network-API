@@ -1,8 +1,5 @@
 function formattedDate(today) {
-   console.log("This si the date!!")
-   console.log(today)
-
-   return today.getMonth()
+   return `${today.getMonth()}/${today.getDate()}/${today.getFullYear()} at ${today.getHours()}:${today.getMinutes()}`
 }
 
 module.exports = formattedDate;
