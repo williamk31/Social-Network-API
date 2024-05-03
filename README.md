@@ -131,7 +131,11 @@ Prior to running the application, you will need to install the dependencies. Nav
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Click the link to view a walkthrough video of the API routes for this application:
+Click the links to view walkthrough videos of the API routes for this application:
+
+[Walkthrough Video Part 1](https://www.loom.com/share/c1e560afeb6844ee9315842ebe7886f7?sid=49952638-6760-4b8c-a820-4e4b32fd133c)
+
+[Walkthrough Video Part 2](https://www.loom.com/share/b551eb8bb74b43dfb917b9f026109955?sid=a4d75cc5-39af-451c-ae88-b47ddfa43f00)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
